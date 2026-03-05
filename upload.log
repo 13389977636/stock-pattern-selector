@@ -1,0 +1,54 @@
+/root/.copaw/stock_pattern_selector/upload_server.py:11: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  import cgi
+204.76.203.8 - - [05/Mar/2026 10:15:47] code 404, message Not Found
+204.76.203.8 - - [05/Mar/2026 10:15:47] "GET /geoserver/wfs?request=ListStoredQueries&service=wfs&version=2.0.0 HTTP/1.1" 404 -
+87.106.166.69 - - [05/Mar/2026 10:26:21] code 404, message Not Found
+87.106.166.69 - - [05/Mar/2026 10:26:21] "GET /login HTTP/1.1" 404 -
+204.76.203.8 - - [05/Mar/2026 10:33:36] code 404, message Not Found
+204.76.203.8 - - [05/Mar/2026 10:33:36] "GET /geoserver/wfs?request=ListStoredQueries&service=wfs&version=2.0.0 HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('162.142.125.199', 38896)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 318, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 349, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 404, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+162.142.125.199 - - [05/Mar/2026 10:45:38] code 400, message Bad request version ('À\\x14À')
+162.142.125.199 - - [05/Mar/2026 10:45:38] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x16þÉ\x9d=\x9e\x9cpýÆft\x8a\x02©kËát\x94Ö`¥lvL\x1a¼ÍQ\x99+ U\x1bÞ}\x16§l\x9eÞ((ÇUë=\x07d\x80¨ØT@?û&EÿECÏ-r\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+----------------------------------------
+Exception occurred during processing of request from ('162.142.125.199', 7890)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 318, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 349, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 404, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+162.142.125.199 - - [05/Mar/2026 10:46:14] code 400, message Bad request syntax ('ZG\\x00\\x00\\x00\\x05\\x00+\\x0e\\x01\\x00')
+162.142.125.199 - - [05/Mar/2026 10:46:14] "ZG\x00\x00\x00\x05\x00+\x0e\x01\x00" 400 -
